@@ -39,10 +39,20 @@
   <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
-  <script>
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
+ <script>
+  const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+  function updateWebsiteTheme() {
+    if (prefersDarkMode.matches) {
+      document.documentElement.setAttribute('dark', '');
       document.documentElement.classList.add('dark-mode');
+    } else {
+        document.documentElement.removeAttribute('dark');
+        document.documentElement.classList.remove('dark-mode');
+      }
     }
-  </script>
+  updateWebsiteTheme();
+  if (prefersDarkMode.addListener) {
+  prefersDarkMode.addListener(updateWebsiteTheme);
+  }
+ </script>
 </head>

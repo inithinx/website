@@ -1,60 +1,53 @@
 #-------------------------------
 # General Site Settings
-baseURL = "http://example.org/"
+baseURL = "https://nithinkrishna.in"
 languageCode = "en-us"
-title = "Joseph Lawrence"
-googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+title = "Nithin Krishnaa"
 paginate = 5
+disableHugoGeneratorInject = true
 
 
 #-------------------------------
 # Main Menu
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact"
+    identifier = "writeups"
+    name = "Writeups"
+    url = "/posts/writeups/"
     weight = 3
-
-  [[menu.main]]
-    identifier = "elements"
-    name = "Elements"
-    url = "/elements"
-    weight = 4
-
 
 [params]
   logo = "" # You can add own logo. For example "/images/logo.png".
-  description = "Joseph is a super minimal content focus theme for Hugo."
+  description = "Nithin Krishnaa's page on the internet."
 
   [params.author]
-    name = "Joseph Lawrence"
+    name = "Nithin Krishnaa"
     bio = "I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems."
-    avatar = "/images/01.jpg"
+    avatar = "/images/me.webp"
 
   #-------------------------------
   # Hero Settings
   [params.hero]
     hero__title = "Hey, I’m Joseph! Designer & Developer."
     hero__description = "I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems."
-    hero__image = "/images/01.jpg"
+    hero__image = "/images/me.webp"
 
   [[params.social]]
     icon = "ion-logo-twitter"
     name = "Twitter"
-    link = "https://twitter.com"
+    link = "https://twitter.com/inithinx/"
 
   [[params.social]]
     icon = "ion-logo-facebook"
@@ -81,35 +74,12 @@ paginate = 5
     name = "Vimeo"
     link = "https://vimeo.com"
 
-  # Example of adding a new link to the author section and footer:
-  # [[params.social]]
-  #   icon = "ion-logo-github"
-  #   name = "Github"
-  #   link = "https://github.com/gohugoio"
+   [[params.social]]
+     icon = "ion-logo-github"
+     name = "Github"
+     link = "https://github.com/inithinx"
 
   # Other icons can be found at https://ionicons.com/v4/
-
-  #-------------------------------
-  # Newsletter (partials/footer-widgets/widget-subscribe.html)
-  [params.mailchimp]
-    mailchimp__title = "Get interesting news"
-    mailchimp__text = "Subscribe to our newsletter and we’ll send you the emails of latest posts."
-    mailchimp__identifier = "" # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-    mailchimp__button__text = "Join" # Add your button text
-
-  #-------------------------------
-  # Contact Settings
-  [params.contact]
-    email = "your@email.com" # Add your form_id
-
-    # NOTE
-    # Joseph comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
-
-  #-------------------------------
-  # Comment Section (Disqus)
-  [params.disqus]
-    disqusShortname = "anvodstudio-joseph" # add your shortname for Disqus Comment. For example anvodstudio-joseph
-
 
 [markup]
   [markup.goldmark]

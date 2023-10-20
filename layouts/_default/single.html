@@ -42,9 +42,7 @@
       {{ end }}
     </div>
 
-    {{ if .Site.Params.disqus.disqusShortname }}
-      {{ partial "comments.html" . }}
-    {{ end }}
+  {{ partial "comments.html" . }}
 
   </article>
   
