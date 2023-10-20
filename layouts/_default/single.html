@@ -42,18 +42,8 @@
       {{ end }}
     </div>
 
-    <div class="post-author">
-      <a href="/about/" class="post-author__image" aria-label="{{.Site.Params.author.name}}">
-        <img src="{{ .Site.Params.author.avatar | absURL }}" alt="{{.Site.Params.author.name}}">
-      </a>
-      <div class="post-author__info">
-        <h2 class="post-author__name"><a href="/about/">{{.Site.Params.author.name}}</a></h2>
-        <p class="post-author__bio">{{.Site.Params.author.bio}}</p>
-      </div>
-    </div>
-
     {{ if .Site.Params.disqus.disqusShortname }}
-      {{ partial "disqus-comments.html" . }}
+      {{ partial "comments.html" . }}
     {{ end }}
 
   </article>
