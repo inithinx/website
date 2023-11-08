@@ -42,7 +42,7 @@ disableHugoGeneratorInject = true
   [params.hero]
     hero__title = "Hey, I’m Joseph! Designer & Developer."
     hero__description = "I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems."
-    hero__image = "/images/me.webp"
+    #hero__image = "/images/me.webp"
 
   [[params.social]]
     icon = "ion-logo-twitter"
