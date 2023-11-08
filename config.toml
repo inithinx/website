@@ -35,7 +35,7 @@ disableHugoGeneratorInject = true
   [params.author]
     name = "Nithin Krishnaa"
     bio = "I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems."
-    avatar = "/images/me.webp"
+    #avatar = "/images/me.webp"
 
   #-------------------------------
   # Hero Settings

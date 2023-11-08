@@ -11,8 +11,8 @@
   --background-color: var(--white);
   --background-alt-color: var(--dark);
   
-  --text-color: var(--dark-blue);
-  --text-alt-color: var(--gray);
+  --text-color: var(--dark-blue); /* Set a dark text color for better contrast */
+  --text-alt-color: var(--gray); /* You can keep the alternative text color */
   
   --heading-font-color: var(--dark-blue);
 
