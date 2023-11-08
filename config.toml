@@ -22,12 +22,6 @@ disableHugoGeneratorInject = true
     url = "/posts/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "writeups"
-    name = "Writeups"
-    url = "/posts/writeups/"
-    weight = 3
-
 [params]
   logo = "" # You can add own logo. For example "/images/logo.png".
   description = "Nithin Krishnaa's page on the internet."
