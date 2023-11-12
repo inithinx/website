@@ -39,7 +39,7 @@
   <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
- <!-- <script>
+<script>
   const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
   function updateWebsiteTheme() {
     if (prefersDarkMode.matches) {
@@ -54,9 +54,5 @@
   if (prefersDarkMode.addListener) {
   prefersDarkMode.addListener(updateWebsiteTheme);
   }
- </script> -->
- <script>
-  document.documentElement.setAttribute('dark','');
-  document.documentElement.classList.add('dark-mode');
  </script>
 </head>
